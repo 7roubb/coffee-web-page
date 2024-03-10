@@ -1,0 +1,475 @@
+.container{
+    padding-top:0px ;
+}
+
+@keyframes breathe {
+    0% { transform: scale(0.9); }
+    
+    100% { transform: scale(1); }
+  }
+  @keyframes tectonic {
+    0% { transform: translate(40px, 0px); }
+ 
+    100% { transform: translate(0, 0); }
+  }
+  @keyframes drift {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(0); }
+  }
+  
+  
+@keyframes pan {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes ascend {
+  0% {
+    transform: translateY(200px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+.b>h2{
+          animation: fadeInFromBottom 1s ease-in;
+}
+
+.sideb{
+    display: flex;
+    justify-content: flex-end;
+    
+    max-width: 55%;
+    right: 0px;
+}
+.cup{position:absolute;
+    top: 50px;
+    right: 200px;
+    z-index: 9;
+    width:750px;
+    animation: breathe 1.2s  ease-in-out;
+
+}
+.coffeebeans{
+    float: right;
+    right: -90px;
+    position: absolute;
+    z-index: 2;
+    width: 600px;
+    top:0px;
+    animation: tectonic 1.2s  linear alternate;
+
+   
+}
+.bgpic{
+    right: 200px;
+    top: 10px;
+
+    z-index: 0;
+    position:absolute;
+    width: 600px;
+    animation: drift 1.2s  alternate linear;
+
+}
+.container{
+    position: relative;
+    right: 0px;
+}
+.sidea{
+    width:40%;
+    display: block;
+    height: 100% !important;
+}
+
+.sideacontainer{
+    display: block;
+    padding-top: 5%;
+}
+h1{
+    display: block; width:100%;
+    color:white;
+    font-size:4rem ;
+      animation: ascend 2s ease;
+    
+
+}
+ul {
+    padding: 30px;
+    color:white;
+    font-size: 1.2rem;
+    width: 100%;
+    list-style: none;
+}
+ul >li{
+    padding: 10px;
+
+}
+ul >li{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+} 
+span>img{
+    height: 50px !important;
+  
+}
+ul>li:nth-child(1){
+    display: flex;
+    align-items: center;
+    animation: ascend 2.1s ease;
+    
+}
+ul>li:nth-child(2){
+    display: flex;
+    align-items: center;
+    animation: ascend 2.2s ease;
+    
+}
+ul>li:nth-child(3){
+    display: flex;
+    align-items: center;
+    animation: ascend 2.3s ease;
+    
+}
+footer{
+    width: 100%;
+    background-color: white;
+    height: 240px;
+   
+    display: flex;
+}
+footer>.b{
+width:33.34%;
+display: flex;
+justify-content:center ;
+align-items: center;
+background-color:#6a8670 ;
+z-index: 5;
+    
+}
+.order{
+    padding: 10px 20px;
+    border: 1px solid #c27729 ;
+    border-radius: 10px;
+    background-color: #c27729;
+        margin-right: 20px !important;
+            animation: ascend 2.3s ease;
+        
+    
+}
+.order:hover{
+    padding: 10px 20px;
+    border: 1px solid #72420f ;
+    border-radius: 10px;
+    background-color: #72420f;
+}
+.order{
+cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+    justify-content: space-around;
+    gap: 0.7rem;
+}
+.ordercontainer{
+    display: flex;
+    padding-bottom: 50px;
+    
+}
+.mobileapp{
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #6a8670;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #6a8670;
+     animation: ascend 2.3s ease;
+    
+}
+.mobileapp>img{
+    padding-right: 5px;
+}
+.mobileapp:hover{
+    background-color: #38463b;
+}
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.a>li {
+          animation: fadeInFromBottom 1s ease-in;
+      
+    
+}
+footer>.a{
+width:66.66%;
+display: flex;
+justify-content:center ;
+align-items: center;
+background-color:white;
+z-index: 5;
+    
+}
+   @media screen and (max-width: 1500px) {
+    .cup{
+            width: 600px;
+            top: 240px;
+            
+        
+           }
+           .coffeebeans{
+            width: 600px;
+            top: 220px;
+            right: 0px;
+        
+           }
+           .bgpic{
+            width:500px;
+            top: 320px;
+           }
+           footer{
+            margin-top:200px
+
+           }
+    
+       }
+       
+
+  @media screen and (max-width: 1400px) {
+
+    
+ 
+   .cup{
+    width: 600px;
+    right: 90px;
+
+    
+
+   }
+   .coffeebeans{
+    width: 500px;
+
+    right: 50px;
+
+   }
+   .bgpic{
+    width:500px;
+    right: 90px;
+
+   }
+   footer{
+    height: 300px;
+    
+   }
+   h1{
+    font-size: 1.5rem;
+   }
+   li{
+    font-size: 1.1rem;
+   }
+ 
+  }
+
+
+
+  @media screen and (max-width: 1100px) {
+
+   .container{
+    display: block;
+    width: 100%;
+    bottom: 0;
+
+   }
+   .container .sidea{
+    display: block;
+    width: 100%;
+    height: 100%!important;
+   }
+   .sideb{
+    display: block;
+    padding-top: 300px;
+ 
+   }
+   .a>li{
+    font-size: 13px;
+   }
+   .cup{
+    width: 500px;
+    top: 400px;
+    
+
+   }
+   .coffeebeans{
+    width: 400px;
+    top: 370px;
+    right: 50px;
+
+   }
+   .bgpic{
+    width:400px;
+    top: 420px;
+   }
+   footer{
+    height: 200px;
+              margin-top:0;
+    
+   }
+   h1{
+    font-size: 1.9rem;
+   }
+   li{
+    font-size: 1.4rem;
+   }
+ 
+  }
+    @media screen and (max-width: 900px) {
+  
+     .container{
+      display: block;
+      width: 100%;
+      bottom: 0;
+  
+     }
+     .container .sidea{
+      display: block;
+      width: 100%;
+      height: 100%!important;
+     }
+     .sideb{
+      display: block;
+      padding-top: 300px;
+   
+     }
+     .cup{
+      width: 500px;
+      top: 390px;
+      
+  
+     }
+     .coffeebeans{
+      width: 400px;
+      top: 350px;
+     right: -30px;
+  
+     }
+     .bgpic{
+      width:400px;
+      top: 380px;
+     }
+     footer{
+      height: 200px;
+                margin-top: 0;
+      
+     }
+     h1{
+      font-size: 1.5rem;
+     }
+     li{
+      font-size: 1.1rem;
+     }
+     .order{
+      font-size: 14px;
+      padding: auto;
+     }
+     .order>img{
+      width: 20px;
+     }
+     .mobileapp{
+      font-size: 14px;
+     }
+     .mobileapp>img{
+      width: 20px;
+     }
+     .a>li>img{
+      width: 20px;
+     }
+     
+   
+    }
+  @media screen and (max-width: 600px) {
+  
+         .container{
+          display: block;
+          width: 100%;
+          bottom: 0;
+      
+         }
+         .container .sidea{
+          display: block;
+          width: 100%;
+          height: 100%!important;
+         }
+         .sideb{
+          display: block;
+          padding-top: 300px;
+       
+         }
+         .cup{
+          width: 400px;
+          top: 490px;
+          right: 0px;
+          
+          
+      
+         }
+         .coffeebeans{
+          width: 300px;
+          top: 450px;
+          right: 0px;
+   
+      
+         }
+         .bgpic{
+          width:300px;
+          top: 520px;
+          right:70px;
+         }
+         footer{
+          height: 200px;
+          margin-top: 0;
+         }
+         h1{
+          font-size: 1.9rem;
+         }
+         li{
+          font-size: 1.4rem;
+         }
+         .b>h2{
+            font-size: 1rem;
+         }
+         .b>h2>img{
+            width: 20px;
+         }
+         .a>li{
+            display: block;
+         }
+         .a{
+            display: block;
+         }
+  
+  }
+

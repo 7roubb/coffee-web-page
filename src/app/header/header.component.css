@@ -1,0 +1,331 @@
+
+.header{
+    width: 100%;
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown>li>a:hover{
+    color: #c27729;
+    transition: 0.5s ease-in;
+ }
+
+.logo{
+    width: 180px;
+}
+.links
+{
+    width: 60%;
+    list-style: none;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap:3rem
+}
+.links li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.reg a{
+   
+    text-decoration: none;
+    color:white;
+}
+ .reg{
+    border-left:1px solid #c27729;
+    display: flex;
+    width: 20%;
+    padding-left:20px; 
+    justify-content: space-around;
+    align-items: center;
+
+ 
+}
+.signup{
+    padding: 10px 20px;
+    border: 1px solid #c27729 ;
+    border-radius: 10px;
+    background-color: #c27729;
+}
+.signup:hover{
+    padding: 10px 20px;
+    border: 1px solid #72420f ;
+    border-radius: 10px;
+    background-color: #72420f;
+}
+.dropdown>li>.signup:hover{
+   
+    color: white !important;;
+    border: 1px solid #72420f ;
+    border-radius: 10px;
+    background-color: #72420f;
+}
+*{
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+hr{
+    margin-top: -20px;
+    border: 1px solid #6a8670;
+}
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown {
+    overflow-y:scroll !important;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10 px) !important;
+    -moz-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;   
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+    z-index: 990;
+    -webkit-transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Added standard transition property */
+}
+
+
+.open {
+    height: auto;
+    max-height:300px ;
+}
+
+
+
+
+.dropdown li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.header ul.links li {
+    opacity: 0; 
+    animation: fadeInFromBottom 0.5s forwards; 
+}
+.header .reg a{
+    opacity: 0; 
+
+    animation: fadeInFromBottom 0.5s forwards; 
+
+}
+.links >li>a:hover{
+    color: #c27729;
+  
+
+   transition: 0.4s ease-in;
+    
+ }
+
+ .dropdown li:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+
+ }
+ .reg >.login:hover{
+    color: #c27729;
+    transition: 0.4s ease-in;
+ }
+
+/* Define scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 10px;
+ 
+  /* Width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 30px;
+    height: 0px; /* Rounded corners of the scrollbar handle */
+}
+.dropdown::-webkit-scrollbar-track {height: 10%;}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:none; /* Color of the scrollbar track */
+}
+
+/* Track on hover */
+::-webkit-scrollbar-track:hover {
+    background:none; /* Color of the scrollbar track on hover */
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+    background: transparent; /* Color of the scrollbar corner */
+}
+
+
+::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 20px; 
+}
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 20px;
+}
+
+
+
+
+
+.header ul.links li:nth-child(1) {
+    animation-delay: 0.1s; 
+}
+.header ul.links li:nth-child(2) {
+    animation-delay: 0.2s; 
+}
+.header ul.links li:nth-child(3) {
+    animation-delay: 0.3s; 
+}
+.header ul.links li:nth-child(4) {
+    animation-delay: 0.4s; 
+}
+.header ul.links li:nth-child(5) {
+    animation-delay: 0.5s; 
+}
+.header .reg a:nth-child(1) {
+    animation-delay: 0.6s; 
+}
+.header .reg a:nth-child(2) {
+    animation-delay: 0.7s; 
+}
+
+@keyframes pan {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes pan {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.logo {
+    animation: pan 0.6s linear forwards;
+}
+@media screen and (max-width: 1200px) {
+ 
+    .reg{
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown {
+        display: block;
+    }
+   .link>a{
+    display: none;
+   }
+   .link{
+    display: none;
+    
+   }
+   .dropdown li {
+    
+    padding: 0.7rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    }
+    .dropdown li >.signup{
+        display: flex;
+        
+        justify-content: center;
+        
+    }
+    .dropdown li >.login{
+        display: flex;
+        justify-content: center;
+
+    }
+
+   
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .links,
+    .reg{
+        display: none;
+    }
+  
+    .links {
+      flex-direction: column;
+      gap: 0.3rem;
+      text-align: center;
+    }
+    .link{
+    display: block;
+    padding: 5px;
+   
+    }
+    .link>a{
+        display: block;
+    }
+  
+    .dropdown li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    .toggle_btn{
+        display: none;
+    }
+  }
+  .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    z-index: 2;
+    padding-bottom: 13px;
+    
+  }
+
